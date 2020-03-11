@@ -44,7 +44,7 @@ fastify.get("/", async (request, reply) => {
   }
 });
 
-fastify.listen(config.port || 4000, (err, address) => {
+fastify.listen(config.port || 4000, "0.0.0.0", (err, address) => {
   if (err) throw err;
   fastify.log.info(`server listening on ${address}`);
 });
