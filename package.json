@@ -12,6 +12,6 @@
   "dependencies": {
     "axios": "^0.21.1",
     "fastify": "^2.15.1",
-    "fastify-cors": "^3.0.2"
+    "fastify-cors": "^6.1.0"
   }
 }
