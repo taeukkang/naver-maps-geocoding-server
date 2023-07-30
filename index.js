@@ -9,7 +9,7 @@ let config = JSON.parse(configRaw);
 
 fastify.register(require("fastify-cors"), {
   origin: (origin, cb) => {
-    if (origin.indexOf("localhost") || origin.indexOf("livecorona.co.kr")) {
+    if (origin == `http://localhost:${config.port}` || origin == config.corsDomain) {
       //  Request from localhost will pass
       cb(null, true);
       return;

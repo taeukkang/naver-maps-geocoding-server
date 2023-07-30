@@ -1,5 +1,6 @@
 {
     "port": 4000,
     "ncpMapClientId": "",
-    "ncpMapClientSecret": ""
+    "ncpMapClientSecret": "",
+    "corsDomain": ""
 }
